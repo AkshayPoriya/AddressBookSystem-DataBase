@@ -1,0 +1,13 @@
+-- Create Table
+
+CREATE TABLE address_book
+(
+firstName VARCHAR(20) NOT NULL,
+lastName VARCHAR(20) NOT NULL,
+address VARCHAR(50) NOT NULL,
+city VARCHAR(20) NOT NULL,
+state VARCHAR(20) NOT NULL,
+zip VARCHAR(10) NOT NULL,
+phoneNumber VARCHAR(15) NOT NULL,
+email VARCHAR(100) NOT NULL
+);
