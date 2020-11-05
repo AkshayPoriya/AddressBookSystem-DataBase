@@ -1,13 +1,20 @@
--- Create Table
+/**************************************************************************
+Create address_book Table
+**************************************************************************/
+
+USE address_book_service;
 
 CREATE TABLE address_book
 (
-firstName VARCHAR(20) NOT NULL,
-lastName VARCHAR(20) NOT NULL,
-address VARCHAR(50) NOT NULL,
-city VARCHAR(20) NOT NULL,
-state VARCHAR(20) NOT NULL,
-zip VARCHAR(10) NOT NULL,
-phoneNumber VARCHAR(15) NOT NULL,
-email VARCHAR(100) NOT NULL
+first_name VARCHAR(20),
+last_name VARCHAR(20),
+address VARCHAR(50),
+city VARCHAR(20),
+state VARCHAR(20),
+zip VARCHAR(10),
+phone_number VARCHAR(15),
+email VARCHAR(100),
+CONSTRAINT PK_name PRIMARY KEY (first_name, last_name)
 );
+
+SELECT * FROM address_book;

@@ -1,9 +1,13 @@
--- Count of contacts by city or state
+/**************************************************************************
+Count of contacts by city or state
+**************************************************************************/
 
-select city, COUNT(city) as contacts_count
+USE address_book_service;
+
+SELECT city, COUNT(first_name) AS contacts_count
 FROM address_book
 GROUP BY city;
 
-select state, COUNT(state) as contacts_count
+SELECT state, COUNT(first_name) AS contacts_count
 FROM address_book
 GROUP BY state;
